@@ -1,0 +1,13 @@
+#navbar {
+    position: fixed;
+}
+
+#welcome-section {
+    height: 100vh;
+}
+
+@media all and (max-width: 699px) {
+  body {
+    background: #ccc;
+  }
+}
