@@ -1,0 +1,19 @@
+{
+  "name": "fcc-portfolio-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server public"
+  },
+  "repository": "git+https://github.com/jameskaupert/fcc-portfolio-page.git",
+  "author": "James Kaupert <jameskaupert@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jameskaupert/fcc-portfolio-page/issues"
+  },
+  "homepage": "https://github.com/jameskaupert/fcc-portfolio-page#readme",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
