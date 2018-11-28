@@ -1,13 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Overpass Mono', monospace;
+  color: #515151;
+  background-color: #efefef;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #ccc;
+}
+
 #welcome-section {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #navbar {
   position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #1565c0;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1.6rem;
 }
 
-@media all and (max-width: 720px) {
-  body {
-    background-color: #blue;
+#navbar a {
+  padding: 3.2rem;
+}
+
+.wrapper {
+  position: relative;
+  top: 8.8rem;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.project-link {
+  margin: 4.8rem 2.4rem;
+}
+
+.project-tile {
+  width: 28rem;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.project-tile h2 {
+  padding: 1.6rem;
+  background-color: #ccc;
+  color: #515151;
+}
+
+.project-img {
+  height: 22rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 1.6rem;
+}
+
+footer a {
+  padding: 3.2rem;
+  color: #515151;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #aaa;
+}
+
+@media all and (max-width: 480px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  #navbar a {
+    padding: 2.4rem;
+  }
+
+  .wrapper {
+    position: relative;
+    top: 21.6rem;
   }
 }
